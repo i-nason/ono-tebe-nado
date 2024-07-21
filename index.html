@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body>
+  <body class="body">
     <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
           <li class="header__links-list-item header__links-list-item_no-bullit">
-            <a class="header__link header__link_active">Главная</a>
+            <a class="header__link header__link_active" href="#">Главная</a>
           </li>
           <li class="header__links-list-item">
             <a class="header__link" href="#">Посмотреть лоты</a>
@@ -31,50 +31,42 @@
           alt="Логотип"
         />
       </a>
-      <div class="address">
-        <a href="tel:+99995555555">+9 999 555 5555</a>
-        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <address class="header__address">
-          наб. Принсенграхт 263- 265, Амстердам
+      <div class="address-container">
+        <address class="address">
+          <a href="tel:+99995555555">+9 999 555 5555</a>
+          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          <p class="header__address">
+            наб. Принсенграхт 263- 265, Амстердам
+          </p>
         </address>
-      </div>
+    </div>  
     </header>
     <main>
       <section class="cover">
         <div class="overlay"></div>
         <h1 class="cover__title">
-          <span class="aligned-text"
-            >О<span class="letter-spacing-extended-top">н</span>о</span
-          >
-          <span class="aligned-text aligned-text_center"
-            >Те<span class="letter-spacing-extended-center">б</span>е</span
-          >
-          <span class="aligned-text aligned-text_right"
-            ><span class="letter-spacing-extended-bottom">Н</span>ад<span
-              class="no-letter-spacing"
-              >о</span
-            ></span
-          >
+          <span class="aligned-text">О<span class="letter-spacing-extended-top">н</span>о</span>
+          <span class="aligned-text aligned-text_center">Те<span class="letter-spacing-extended-center">б</span>е</span>
+          <span class="aligned-text aligned-text_right"><span class="letter-spacing-extended-bottom">Н</span>ад<span
+              class="no-letter-spacing">о</span></span>
         </h1>
         <div class="cover__description">
-          <h2 class="cover__description-text">
-            Аукцион
-            <span class="description-text-things">вещей, в которые</span>
-            <span class="description-text-never">никто не верил</span>
-          </h2>
+          <p class="cover__description-text">
+            Аукцион вещей, в которые никто не верил
+          </p>
           <button type="button" class="bet-button">Сделать ставку</button>
         </div>
       </section>
       <section class="lots">
-        <h3 class="lots__heading">Лоты</h3>
+        <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a href="#" class="card-link">
               <article class="card card_type_film">
                 <div class="overlay"></div>
-                <h4 class="card__title">
+                <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
-                </h4>
+                </h3>
                 <div class="card__text">
                   <p>
                     Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
@@ -89,9 +81,9 @@
             <a href="#" class="card-link">
               <article class="card card_type_book">
                 <div class="overlay"></div>
-                <h4 class="card__title">
+                <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
-                </h4>
+                </h3>
                 <div class="card__text">
                   <p>
                     Объёмом почти в тысячу страниц. Иногда без знаков препинания
@@ -109,9 +101,9 @@
             <a href="#" class="card-link">
               <article class="card card_type_picture">
                 <div class="overlay"></div>
-                <h4 class="card__title">
+                <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
-                </h4>
+                </h3>
                 <div class="card__text">
                   <p>
                     Ну действительно, там линия, тут кружочек, а здесь и вовсе
@@ -136,7 +128,7 @@
             />
           </div>
           <div class="about__description">
-            <h4 class="about__title">Об аукционе</h4>
+            <h2 class="about__title">Об аукционе</h2>
             <div class="about__text">
               <p>
                 Здесь вы не встретите очередное пафосное собрание невероятно
@@ -159,13 +151,13 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="address">
+      <address class="address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <address class="footer__address">
+        <p class="footer__address">
           наб. Принсенграхт 263- 265, Амстердам
-        </address>
-      </div>
+        </p>
+      </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
           <li class="footer__menu-list-item">
